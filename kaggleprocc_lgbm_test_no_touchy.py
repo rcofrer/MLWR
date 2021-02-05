@@ -248,16 +248,6 @@ for col in cat_cols:
     factorize(df_train, df_test, col)
 
 
-################# WYJEB TO #####################
-
-print('Optimizing memory...')
-for col in cat_cols:
-    reduce_memory(df_train, col)
-    reduce_memory(df_test, col)
-
-#################################################
-
-
 print("Data ready for Random Search!")
 
 targets = df_train['HasDetections']
